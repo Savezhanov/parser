@@ -1,5 +1,5 @@
 <?php
-/*
+
 class SQL{
 	private static $instance;
 	private $db;
@@ -14,7 +14,7 @@ class SQL{
 	
 	private function __construct(){
 		setlocale(LC_ALL, 'ru_RU.UTF8');	
-		$this->db = new PDO('mysql:host=localhost;dbname=parser-free', 'root', '');
+		$this->db = new PDO('mysql:host=localhost;dbname=parser', 'root', '');
 		$this->db->exec('SET NAMES UTF8');
 		$this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 	}
@@ -101,4 +101,4 @@ class SQL{
 		return $q->rowCount();
 	}
 }
-*/?>
+?>
